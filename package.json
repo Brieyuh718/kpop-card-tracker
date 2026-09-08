@@ -2,12 +2,22 @@
   "name": "kpop-card-tracker",
   "version": "1.0.0",
   "private": true,
+<<<<<<< HEAD
   "type": "module",
+=======
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+>>>>>>> 1af340eb5d6e39fef50e970053324cb80fe2b4c9
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
+<<<<<<< HEAD
   "dependencies": {
     "react": "latest",
     "react-dom": "latest"
@@ -16,4 +26,7 @@
     "@vitejs/plugin-react": "latest",
     "vite": "latest"
   }
+=======
+  "devDependencies": {}
+>>>>>>> 1af340eb5d6e39fef50e970053324cb80fe2b4c9
 }
