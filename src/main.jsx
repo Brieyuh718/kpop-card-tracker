@@ -66,6 +66,84 @@ const idCards = (version, folder, availableMembers) =>
     landscape: true,
   }));
 
+  const thisUnitCards = [
+  {
+    id: "this-unit-bangchan-han",
+    comeback: "this-that",
+    version: "THIS",
+    category: "Unit cards",
+    type: "Unit Card",
+    member: "Bang Chan & Han",
+    image: "/cards/This/Bangchan-Han-Unit.jpg",
+  },
+  {
+    id: "this-unit-felix-seungmin",
+    comeback: "this-that",
+    version: "THIS",
+    category: "Unit cards",
+    type: "Unit Card",
+    member: "Felix & Seungmin",
+    image: "/cards/This/Felix-Seungmin-Unit.jpg",
+  },
+  {
+    id: "this-unit-hyunjin-in",
+    comeback: "this-that",
+    version: "THIS",
+    category: "Unit cards",
+    type: "Unit Card",
+    member: "Hyunjin & I.N",
+    image: "/cards/This/Hyunjin-IN-Unit.jpg",
+  },
+  {
+    id: "this-unit-leeknow-changbin",
+    comeback: "this-that",
+    version: "THIS",
+    category: "Unit cards",
+    type: "Unit Card",
+    member: "Lee Know & Changbin",
+    image: "/cards/This/Leeknow-Changbin-Unit.jpg",
+  },
+];
+
+  const thatUnitCards = [
+  {
+    id: "that-unit-bangchan-in",
+    comeback: "this-that",
+    version: "THAT",
+    category: "Unit cards",
+    type: "Unit Card",
+    member: "Bang Chan & I.N",
+    image: "/cards/That/Bangchan-IN-Unit.jpg",
+  },
+  {
+    id: "that-unit-changbin-seungmin",
+    comeback: "this-that",
+    version: "THAT",
+    category: "Unit cards",
+    type: "Unit Card",
+    member: "Changbin & Seungmin",
+    image: "/cards/That/Changbin-Seungmin-Unit.jpg",
+  },
+  {
+    id: "that-unit-hyunjin-felix",
+    comeback: "this-that",
+    version: "THAT",
+    category: "Unit cards",
+    type: "Unit Card",
+    member: "Hyunjin & Felix",
+    image: "/cards/That/Hyunjin-Felix-Unit.jpg",
+  },
+  {
+    id: "that-unit-leeknow-han",
+    comeback: "this-that",
+    version: "THAT",
+    category: "Unit cards",
+    type: "Unit Card",
+    member: "Lee Know & Han",
+    image: "/cards/That/Leeknow-Han-Unit.jpg",
+  },
+];
+
 const pobCards = members.map((member) => ({
   id: `and-pob-${fileNames[member]}`,
   comeback: "this-that",
@@ -73,15 +151,17 @@ const pobCards = members.map((member) => ({
   category: "POB photocards",
   type: "POB",
   member,
-  image: `/cards/&/${fileNames[member].toUpperCase()}-POB.jpg`,
+  image: `/cards/&/${fileNames[member]}-POB.jpg`,
 }));
 
 const cards = [
   ...albumCards("THIS", "This"),
   ...idCards("THIS", "This", idMembersThis),
+  ...thisUnitCards,
 
   ...albumCards("THAT", "That"),
   ...idCards("THAT", "That", idMembersThat),
+  ...thatUnitCards,
 
   ...albumCards("&", "&"),
   ...pobCards,
